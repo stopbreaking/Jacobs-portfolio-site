@@ -1,4 +1,4 @@
-(function(){const r=document.createElement("link").relList;if(r&&r.supports&&r.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))c(s);new MutationObserver(s=>{for(const t of s)if(t.type==="childList")for(const e of t.addedNodes)e.tagName==="LINK"&&e.rel==="modulepreload"&&c(e)}).observe(document,{childList:!0,subtree:!0});function d(s){const t={};return s.integrity&&(t.integrity=s.integrity),s.referrerPolicy&&(t.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?t.credentials="include":s.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function c(s){if(s.ep)return;s.ep=!0;const t=d(s);fetch(s.href,t)}})();document.querySelector("#app").innerHTML=`
+(function(){const r=document.createElement("link").relList;if(r&&r.supports&&r.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))c(s);new MutationObserver(s=>{for(const t of s)if(t.type==="childList")for(const e of t.addedNodes)e.tagName==="LINK"&&e.rel==="modulepreload"&&c(e)}).observe(document,{childList:!0,subtree:!0});function a(s){const t={};return s.integrity&&(t.integrity=s.integrity),s.referrerPolicy&&(t.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?t.credentials="include":s.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function c(s){if(s.ep)return;s.ep=!0;const t=a(s);fetch(s.href,t)}})();document.querySelector("#app").innerHTML=`
   <div>
     <div class="header">
     <section class="hidden">
@@ -8,7 +8,7 @@
     <div class="scrolling-wrapper">
         <div class="container noselect">
         <section class="c-hidden d1">
-        <a href = "./sp-marching-squares.html">
+        <a href = "./public/JacobsMarchingSquaresWrapped/index.html">
             <div class="canvas">
                 <div class="tracker tr-1"></div>
                 <div class="tracker tr-2"></div>
@@ -53,7 +53,7 @@
         </div>
         <div class="container noselect">
         <section class="c-hidden d2">
-            <a href = "/sp-cantstop.html">
+            <a href = "./sp-cantstop.html">
             <div class="canvas">
                 <div class="tracker tr-1"></div>
                 <div class="tracker tr-2"></div>
@@ -143,4 +143,6 @@
         </div>
     </div>
   </div>
-`;const a=new IntersectionObserver(i=>{i.forEach(r=>{console.log(r),r.isIntersecting?r.target.classList.add("show"):r.target.classList.remove("show")})}),v=new IntersectionObserver(i=>{i.forEach(r=>{console.log(r),r.isIntersecting?r.target.classList.add("c-show"):r.target.classList.remove("c-show")})}),l=new IntersectionObserver(i=>{i.forEach(r=>{console.log(r),r.isIntersecting?r.target.classList.add("c-show-alt"):r.target.classList.remove("c-show-alt")})}),o=document.querySelectorAll(".hidden");o.forEach(i=>a.observe(i));const n=document.querySelectorAll(".c-hidden");n.forEach(i=>v.observe(i));const k=document.querySelectorAll(".c-hidden-alt");k.forEach(i=>l.observe(i));
+`;const d=new IntersectionObserver(i=>{i.forEach(r=>{console.log(r),r.isIntersecting?r.target.classList.add("show"):r.target.classList.remove("show")})}),v=new IntersectionObserver(i=>{i.forEach(r=>{console.log(r),r.isIntersecting?r.target.classList.add("c-show"):r.target.classList.remove("c-show")})}),l=new IntersectionObserver(i=>{i.forEach(r=>{console.log(r),r.isIntersecting?r.target.classList.add("c-show-alt"):r.target.classList.remove("c-show-alt")})}),o=document.querySelectorAll(".hidden");o.forEach(i=>d.observe(i));const n=document.querySelectorAll(".c-hidden");n.forEach(i=>v.observe(i));const k=document.querySelectorAll(".c-hidden-alt");k.forEach(i=>l.observe(i));const g=require("chrome-remote-interface");setTimeout(()=>{g(async i=>{const{Network:r,Page:a,Runtime:c}=i,s=new Set;r.requestWillBeSent(({requestId:t,request:e})=>{e.url.indexOf("ct2/results/rpc")!=-1&&(console.log(`REQ [${t}] ${e.method} ${e.url} 
+`),s.add(t))}),r.loadingFinished(async({requestId:t})=>{if(s.has(t)){const{body:e,base64Encoded:h}=await r.getResponseBody({requestId:t});console.log(`RES [${t}] body: ${e} 
+`)}});try{await Promise.all([r.enable(),a.enable()]),await a.navigate({url:"https://clinicaltrials.gov/ct2/results?cond=Parents&term=&cntry1=&state1=&Search=Search&recrs=a#wrapper"}),await a.loadEventFired(),await c.evaluate({expression:"document.querySelector('.paginate_button.next').click()"})}catch(t){console.error(t)}}).on("error",i=>{console.error(i)})},1e3);
