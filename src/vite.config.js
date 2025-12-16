@@ -7,12 +7,5 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [react()],
-    base: "https://stopbreaking.github.io/Jacobs-portfolio-site/",
-    build: {
-        rollupOptions: {
-            input: {
-                main: resolve(__dirname, 'index.html'),
-            },
-        },
-    },
+    base: "https://stopbreaking.github.io/Jacobs-portfolio-site",
 })
