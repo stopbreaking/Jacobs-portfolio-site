@@ -7,7 +7,7 @@ import gameLogo2 from '/ss_cantstop1.png'
 
 document.querySelector('#app3').innerHTML = `
   <div id="embeddedGameSquares">
-    <embed type="text/html" src="/JacobsMarchingSquaresBuild4/index.html" width="100%" height="720px">
+    <embed type="text/html" src="/JacobsMarchingSquaresBuild/index.html" width="100%" height="720px">
   </div>
   <div id = "projectBlurb"> 
     <h1>Marching Squares Project</h1>
