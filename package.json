@@ -2,9 +2,9 @@
   "name": "jacobs-site",
   "private": false,
   "version": "0.0.0",
-  "homepage": "https://stopbreaking.github.io/Jacobs-portfolio-site/",
+  "homepage": "https://stopbreaking.github.io/Jacobs-portfolio-site",
   "type": "module",
-  "base": "https://stopbreaking.github.io/Jacobs-portfolio-site/",
+  "base": "https://stopbreaking.github.io/Jacobs-portfolio-site",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
