@@ -1,8 +1,4 @@
-import '../public/style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import gameLogo1 from '/f.PNG'
-import gameLogo2 from '/ss_cantstop1.png'
+//import '../public/style.css'
 
 
 document.querySelector('#app').innerHTML = `
