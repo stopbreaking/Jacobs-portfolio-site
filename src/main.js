@@ -56,7 +56,7 @@ document.querySelector('#app').innerHTML = `
         </div>
         <div class="container noselect">
         <section class="c-hidden d2">
-            <a href = "./sp-cantstop.html">
+            <a href = "../public/sp-cantstop.html">
             <div class="canvas">
                 <div class="tracker tr-1"></div>
                 <div class="tracker tr-2"></div>
