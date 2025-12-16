@@ -15,7 +15,7 @@ document.querySelector('#app').innerHTML = `
     <div class="scrolling-wrapper">
         <div class="container noselect">
         <section class="c-hidden d1">
-        <a href = "/sp-marching-squares.html">
+        <a href = "./sp-marching-squares.html">
             <div class="canvas">
                 <div class="tracker tr-1"></div>
                 <div class="tracker tr-2"></div>
@@ -44,11 +44,11 @@ document.querySelector('#app').innerHTML = `
                 <div class="tracker tr-25"></div>
                 <div id="card">
                     <div id="box">
-                        <img src='/gamelogo3y.PNG' class="card-img" alt="gameLogo1">    
+                        <img src='./gamelogo3y.PNG' class="card-img" alt="gameLogo1">    
                         <h2>Marching Squares</h2>
                     </div>
                     <div id="extra-card-logos">
-                        <img src = 'public/logos/unity-logo-extrawhite.png' alt="unityLogo" width="64px">
+                        <img src = './logos/unity-logo-extrawhite.png' alt="unityLogo" width="64px">
                     </div>
                     <div id="extra-card-ms"> 
                          <subtitle> Implementation of a well-known <br> algorithm in unity </subtitle>
@@ -89,11 +89,11 @@ document.querySelector('#app').innerHTML = `
                 <div class="tracker tr-25"></div>
                     <div id="card">
                         <div id="box">
-                            <img src='/coppertest2.png' class="card-img-no-width" alt="gameLogo2" width="100%">
+                            <img src='./coppertest2.png' class="card-img-no-width" alt="gameLogo2" width="100%">
                             <h2>I Can't Stop!</h2>
                         </div>
                         <div id="extra-card-logos">
-                            <img src = 'public/logos/gamemaker-logo.png' alt="gmLogo" width="64px">
+                            <img src = './logos/gamemaker-logo.png' alt="gmLogo" width="64px">
                         </div>
                         <div id="extra-card"> 
                          <subtitle> Made in 3 days <br> for a game jam. </subtitle>
@@ -134,14 +134,14 @@ document.querySelector('#app').innerHTML = `
                 <div class="tracker tr-25"></div>
                 <div id="card">
                     <div id="box">
-                        <img src="/f.PNG" class="card-img" alt="gamelogo1">
+                        <img src="./f.PNG" class="card-img" alt="gamelogo1">
                         <h2>Rpg Test</h2>
                     </div>
                     <div id="extra-card-rpg"> 
                          <subtitle> Made over many months <br> as a learning experience. </subtitle>
                     </div>
                     <div id="extra-card-logos">
-                            <img src = 'public/logos/gamemaker-logo.png' alt="gmLogo" width="64px">
+                            <img src = './logos/gamemaker-logo.png' alt="gmLogo" width="64px">
                     </div>
                 </div>
             </div>
