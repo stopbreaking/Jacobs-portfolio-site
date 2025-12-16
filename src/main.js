@@ -11,7 +11,7 @@ document.querySelector('#app').innerHTML = `
     <div class="scrolling-wrapper">
         <div class="container noselect">
         <section class="c-hidden d1">
-        <a href = "./sp-marching-squares.html">
+        <a href = "./public/JacobsMarchingSquaresWrapped/index.html">
             <div class="canvas">
                 <div class="tracker tr-1"></div>
                 <div class="tracker tr-2"></div>
@@ -56,7 +56,7 @@ document.querySelector('#app').innerHTML = `
         </div>
         <div class="container noselect">
         <section class="c-hidden d2">
-            <a href = "/sp-cantstop.html">
+            <a href = "./sp-cantstop.html">
             <div class="canvas">
                 <div class="tracker tr-1"></div>
                 <div class="tracker tr-2"></div>
