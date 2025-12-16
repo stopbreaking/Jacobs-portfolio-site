@@ -1,4 +1,4 @@
-(function(){const r=document.createElement("link").relList;if(r&&r.supports&&r.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))e(s);new MutationObserver(s=>{for(const t of s)if(t.type==="childList")for(const c of t.addedNodes)c.tagName==="LINK"&&c.rel==="modulepreload"&&e(c)}).observe(document,{childList:!0,subtree:!0});function d(s){const t={};return s.integrity&&(t.integrity=s.integrity),s.referrerPolicy&&(t.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?t.credentials="include":s.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function e(s){if(s.ep)return;s.ep=!0;const t=d(s);fetch(s.href,t)}})();document.querySelector("#app").innerHTML=`
+(function(){const r=document.createElement("link").relList;if(r&&r.supports&&r.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))c(s);new MutationObserver(s=>{for(const t of s)if(t.type==="childList")for(const e of t.addedNodes)e.tagName==="LINK"&&e.rel==="modulepreload"&&c(e)}).observe(document,{childList:!0,subtree:!0});function d(s){const t={};return s.integrity&&(t.integrity=s.integrity),s.referrerPolicy&&(t.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?t.credentials="include":s.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function c(s){if(s.ep)return;s.ep=!0;const t=d(s);fetch(s.href,t)}})();document.querySelector("#app").innerHTML=`
   <div>
     <div class="header">
     <section class="hidden">
@@ -8,7 +8,7 @@
     <div class="scrolling-wrapper">
         <div class="container noselect">
         <section class="c-hidden d1">
-        <a href = "/sp-marching-squares.html">
+        <a href = "./sp-marching-squares.html">
             <div class="canvas">
                 <div class="tracker tr-1"></div>
                 <div class="tracker tr-2"></div>
@@ -37,11 +37,11 @@
                 <div class="tracker tr-25"></div>
                 <div id="card">
                     <div id="box">
-                        <img src='/gamelogo3y.PNG' class="card-img" alt="gameLogo1">    
+                        <img src='./gamelogo3y.PNG' class="card-img" alt="gameLogo1">    
                         <h2>Marching Squares</h2>
                     </div>
                     <div id="extra-card-logos">
-                        <img src = 'public/logos/unity-logo-extrawhite.png' alt="unityLogo" width="64px">
+                        <img src = './logos/unity-logo-extrawhite.png' alt="unityLogo" width="64px">
                     </div>
                     <div id="extra-card-ms"> 
                          <subtitle> Implementation of a well-known <br> algorithm in unity </subtitle>
@@ -82,11 +82,11 @@
                 <div class="tracker tr-25"></div>
                     <div id="card">
                         <div id="box">
-                            <img src='/coppertest2.png' class="card-img-no-width" alt="gameLogo2" width="100%">
+                            <img src='./coppertest2.png' class="card-img-no-width" alt="gameLogo2" width="100%">
                             <h2>I Can't Stop!</h2>
                         </div>
                         <div id="extra-card-logos">
-                            <img src = 'public/logos/gamemaker-logo.png' alt="gmLogo" width="64px">
+                            <img src = './logos/gamemaker-logo.png' alt="gmLogo" width="64px">
                         </div>
                         <div id="extra-card"> 
                          <subtitle> Made in 3 days <br> for a game jam. </subtitle>
@@ -127,14 +127,14 @@
                 <div class="tracker tr-25"></div>
                 <div id="card">
                     <div id="box">
-                        <img src="/f.PNG" class="card-img" alt="gamelogo1">
+                        <img src="./f.PNG" class="card-img" alt="gamelogo1">
                         <h2>Rpg Test</h2>
                     </div>
                     <div id="extra-card-rpg"> 
                          <subtitle> Made over many months <br> as a learning experience. </subtitle>
                     </div>
                     <div id="extra-card-logos">
-                            <img src = 'public/logos/gamemaker-logo.png' alt="gmLogo" width="64px">
+                            <img src = './logos/gamemaker-logo.png' alt="gmLogo" width="64px">
                     </div>
                 </div>
             </div>
