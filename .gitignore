@@ -21,6 +21,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+Gemfile.lock
 
 # Vite Ruby
 /_frontend/entrypoints/assets/vite.svg
