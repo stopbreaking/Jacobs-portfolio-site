@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Custom PreHead code is injected here -->
+    
+
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta charset="utf-8"/>
+
+        <!-- Builtin injector for disabling cache -->
+        <meta http-equiv="pragma" content="no-cache"/>
+
+        <!-- Set the title bar of the page -->
+        <title>Cant Stop</title>
+
+        <!-- Custom PreStyle code is injected here -->
+        
+
+        <!-- Set the background colour of the document -->
+        <style>
+            html {}
+
+            body {
+                display: block;
+                margin: 0px;
+                padding: 0px;
+                border: 0px;
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                background-image: url("data:image/png;base64,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");
+            }
+
+            canvas {
+                image-rendering: optimizeSpeed;
+                -webkit-interpolation-mode: nearest-neighbor;
+                -ms-touch-action: none;
+                touch-action: none;
+                margin: 0px;
+                padding: 0px;
+                border: 0px;
+            }
+            :-webkit-full-screen #canvas {
+                width: 100%;
+                height: 100%;
+            }
+            :-webkit-full-screen {
+                width: 100%;
+                height: 100%;
+            }
+            
+            /* Custom Runner Styles */
+            div.gm4html5_div_class {
+                margin: 0px;
+                padding: 0px;
+                border: 0px;
+            }
+            div.gm4html5_login {
+                padding: 20px;
+                position: absolute;
+                border: solid 2px #000000;
+                background-color: #404040;
+                color:#00ff00;
+                border-radius: 15px;
+                box-shadow: #101010 20px 20px 40px;
+            }
+            div.gm4html5_cancel_button {
+                float: right;
+            }
+            div.gm4html5_login_button {
+                float: left;
+            }
+            div.gm4html5_login_header {
+                text-align: center;
+            }
+            /* END - Custom Runner Styles */
+            
+        </style>
+
+        <!-- Custom PostStyle code is injected here -->
+        
+
+        <!-- Builtin injector for injecting flurry analytics code -->
+        
+    </head>
+
+    <!-- Custom PostHead code is injected here -->
+    
+
+    <!-- Custom PreBody code is injected here -->
+    
+
+    <body>
+        <div class="gm4html5_div_class" id="gm4html5_div_id">
+            
+            <!-- Builtin injector for splash screen -->
+            
+
+            <!-- Create the canvas element the game draws to -->
+            <canvas id="canvas" width="1366" height="768" style="position: absolute; top: 50%; left: 50%; bottom: -50%; right: -50%; transform: translate(-50%, -50%);">
+                <p>Your browser doesn't support HTML5 canvas.</p>
+            </canvas>
+        </div>
+
+        <!-- Run the game code -->
+        <script type="text/javascript" src="html5game/I%20CANT%20STOOOP.cjs?cachebust=1099203164"></script>
+
+        <!-- Builtin injector for injecting runner path -->
+        
+
+        <script>window.onload = GameMaker_Init;</script>
+
+        <!-- Builtin injector for injecting google analytics code -->
+        
+
+    </body>
+
+    <!-- Custom PostBody code is injected here -->
+    
+</html>
