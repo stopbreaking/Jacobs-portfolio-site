@@ -8,7 +8,7 @@
     <div class="scrolling-wrapper">
         <div class="container noselect">
         <section class="c-hidden d1">
-        <a href = "Jacobs-portfolio-site/public/sp-marching-squares.html">
+        <a href = "/Jacobs-portfolio-site/public/sp-marching-squares.html">
             <div class="canvas">
                 <div class="tracker tr-1"></div>
                 <div class="tracker tr-2"></div>
@@ -53,7 +53,7 @@
         </div>
         <div class="container noselect">
         <section class="c-hidden d2">
-            <a href = "Jacobs-portfolio-site/public/sp-cantstop.html">
+            <a href = "/Jacobs-portfolio-site/public/sp-cantstop.html">
             <div class="canvas">
                 <div class="tracker tr-1"></div>
                 <div class="tracker tr-2"></div>
