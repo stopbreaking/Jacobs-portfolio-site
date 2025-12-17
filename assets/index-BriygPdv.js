@@ -8,7 +8,7 @@
     <div class="scrolling-wrapper">
         <div class="container noselect">
         <section class="c-hidden d1">
-        <a href = "./public/sp-marching-squares.html">
+        <a href = "../public/sp-marching-squares.html">
             <div class="canvas">
                 <div class="tracker tr-1"></div>
                 <div class="tracker tr-2"></div>
