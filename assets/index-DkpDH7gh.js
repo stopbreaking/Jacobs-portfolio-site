@@ -1,8 +1,7 @@
-(function(){const r=document.createElement("link").relList;if(r&&r.supports&&r.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))c(s);new MutationObserver(s=>{for(const t of s)if(t.type==="childList")for(const e of t.addedNodes)e.tagName==="LINK"&&e.rel==="modulepreload"&&c(e)}).observe(document,{childList:!0,subtree:!0});function a(s){const t={};return s.integrity&&(t.integrity=s.integrity),s.referrerPolicy&&(t.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?t.credentials="include":s.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function c(s){if(s.ep)return;s.ep=!0;const t=a(s);fetch(s.href,t)}})();document.querySelector("#app").innerHTML=`
+(function(){const r=document.createElement("link").relList;if(r&&r.supports&&r.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))c(s);new MutationObserver(s=>{for(const t of s)if(t.type==="childList")for(const e of t.addedNodes)e.tagName==="LINK"&&e.rel==="modulepreload"&&c(e)}).observe(document,{childList:!0,subtree:!0});function d(s){const t={};return s.integrity&&(t.integrity=s.integrity),s.referrerPolicy&&(t.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?t.credentials="include":s.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function c(s){if(s.ep)return;s.ep=!0;const t=d(s);fetch(s.href,t)}})();document.querySelector("#app").innerHTML=`
   <div>
     <div class="header">
     <section class="hidden">
-    <h1>Projects by Jacob</h1>
     </section>
     </div>
     <div class="scrolling-wrapper">
@@ -143,4 +142,4 @@
         </div>
     </div>
   </div>
-`;const d=new IntersectionObserver(i=>{i.forEach(r=>{console.log(r),r.isIntersecting?r.target.classList.add("show"):r.target.classList.remove("show")})}),v=new IntersectionObserver(i=>{i.forEach(r=>{console.log(r),r.isIntersecting?r.target.classList.add("c-show"):r.target.classList.remove("c-show")})}),l=new IntersectionObserver(i=>{i.forEach(r=>{console.log(r),r.isIntersecting?r.target.classList.add("c-show-alt"):r.target.classList.remove("c-show-alt")})}),o=document.querySelectorAll(".hidden");o.forEach(i=>d.observe(i));const n=document.querySelectorAll(".c-hidden");n.forEach(i=>v.observe(i));const k=document.querySelectorAll(".c-hidden-alt");k.forEach(i=>l.observe(i));
+`;const a=new IntersectionObserver(i=>{i.forEach(r=>{console.log(r),r.isIntersecting?r.target.classList.add("show"):r.target.classList.remove("show")})}),v=new IntersectionObserver(i=>{i.forEach(r=>{console.log(r),r.isIntersecting?r.target.classList.add("c-show"):r.target.classList.remove("c-show")})}),l=new IntersectionObserver(i=>{i.forEach(r=>{console.log(r),r.isIntersecting?r.target.classList.add("c-show-alt"):r.target.classList.remove("c-show-alt")})}),o=document.querySelectorAll(".hidden");o.forEach(i=>a.observe(i));const n=document.querySelectorAll(".c-hidden");n.forEach(i=>v.observe(i));const k=document.querySelectorAll(".c-hidden-alt");k.forEach(i=>l.observe(i));
