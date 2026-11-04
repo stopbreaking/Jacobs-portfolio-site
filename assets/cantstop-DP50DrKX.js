@@ -1,7 +1,8 @@
-import"./style-BIWLM0qb.js";const e="/Jacobs-portfolio-site/I-cant-stop/index.html";document.querySelector("#app2").innerHTML=`
+import"./style-DQtbbKxf.js";const e="/Jacobs-portfolio-site/I-cant-stop/index.html";document.querySelector("#app2").innerHTML=`
   <div id="embeddedGame">
     <embed type="text/html" src="${e}" width="100%" height="768px">
   </div>
+  <div id="cs-bottomblock">
   <div id="projectBlurb"> 
     <h1>I Can't Stop!</h1>
     <p> 
@@ -23,5 +24,6 @@ import"./style-BIWLM0qb.js";const e="/Jacobs-portfolio-site/I-cant-stop/index.ht
     <a href = "https://youtu.be/Srpozv_lIrE">
     SLLL
     </a>
+  </div>
   </div>
 `;
